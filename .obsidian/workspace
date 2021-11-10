@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTFVol1.md",
-            "mode": "source"
+            "file": "CTF Cheatsheet.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTFVol1.md",
+                "file": "CTF Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "6f1f32f30ee43125",
   "lastOpenFiles": [
+    "CTF Cheatsheet.md",
     "CTFVol1.md",
     "Markdown Cheat Sheet.md",
     "www.google.com.md",
