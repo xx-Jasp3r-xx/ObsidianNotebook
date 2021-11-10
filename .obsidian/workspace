@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "ff2d0e000b6f1f9a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f1f32f30ee43125",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Markdown Cheat Sheet.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7c3b600bbb82a218",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc55e89531fa02d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfcadf92befa0193",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e6edaec4a79647a9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3c8b9cce35f30875",
+    "type": "split",
+    "children": [
+      {
+        "id": "a24d576ea498c997",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8025ba4635f3adef",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Markdown Cheat Sheet.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "6f1f32f30ee43125",
+  "lastOpenFiles": [
+    "Markdown Cheat Sheet.md",
+    "CTFVol1.md",
+    "www.google.com.md",
+    "Untitled.md"
+  ]
+}
