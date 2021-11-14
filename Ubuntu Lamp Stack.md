@@ -46,6 +46,8 @@ sudo service apache2 restart
 sudo apt update
 sudo apt-get install php-gd php-imap php-xml php-mbstring php-intl php-apcu
 sudo service apache2 restart
-cd /var/www/html/osticket
+cd /var/www/osTicket
+sudo chown -R www-data:www-data /var/www/osTicket
+sudo chmod -R 755 /var/www/osTicket
 sudo cp include/ost-sampleconfig.php include/ost-config.php
 sudo chmod 0666 include/ost-config.php
