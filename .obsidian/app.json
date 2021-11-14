@@ -3,5 +3,7 @@
   "spellcheck": true,
   "foldHeading": true,
   "showLineNumber": true,
-  "vimMode": true
+  "vimMode": true,
+  "strictLineBreaks": true,
+  "smartIndentList": false
 }

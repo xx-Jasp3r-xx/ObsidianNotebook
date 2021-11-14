@@ -20,3 +20,17 @@ sudo chown -R ubuntu:www-data /var/www
 sudo chmod 2775 /var/www
 find /var/www -type d -exec sudo chmod 2755 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
+
+scp -i <privateKey> <sourceFile> <userName>@<machineHost>:<destinationPath>
+
+scp -i mykey.pem someFile.zip me@10.10.10.10:/home/files
+unzip osticket.zip
+sudo mv upload/ /var/www/html/osticket
+
+wget https://repo.mysql.com//mysql-apt-config_0.8.18-1_all.deb
+sudo dpkg -i mysql.deb
+sudo apt update
+sudo apt-cache policy mysql-server
+sudo apt install mysql-client mysql-community-server mysql-server
+sudo mysql_secure_installation
+
