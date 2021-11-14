@@ -33,6 +33,7 @@ ssh -fNT -R 10.112.3.199:58680:127.0.0.1:8060  whistler@127.0.0.1 -p 8022
 ```
 
 pivot 2 challenge
+password is NoThatsaV
 ```bash
 ssh -fNT -L 0.0.0.0:8082:10.112.3.12:22 whistler@127.0.0.1 -p 8022
 ssh crease@127.0.0.1 -p 8023
