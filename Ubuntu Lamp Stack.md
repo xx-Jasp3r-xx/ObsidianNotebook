@@ -16,7 +16,7 @@ sudo apt install mariadb-server
 
 sudo usermod -a -G www-data ubuntu
 logout and log back in
-sudo chown -R ubuntun:www-data /var/www
+sudo chown -R ubuntu:www-data /var/www
 sudo chmod 2775 /var/www
-find /var/www -type -d -exec sudo chmod 2755 {} \;
-find /var/www -type f -exe sudo chmod 0664 {} \;
+find /var/www -type d -exec sudo chmod 2755 {} \;
+find /var/www -type f -exec sudo chmod 0664 {} \;
