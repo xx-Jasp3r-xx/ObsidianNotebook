@@ -9,6 +9,7 @@
 ~~this is strike-through~~
 
 [this is a link](https://google.com "Google")
+[this is a useful resource to format your notes](https://help.obsidian.md/How+to/Format+your+notes)
 
 [this is a reference link][1]
 

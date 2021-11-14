@@ -1,3 +1,4 @@
+# Professor Lu Commands
 sudo apt install
 sudo apt upgrade
 sudo apt install apache2
@@ -21,6 +22,7 @@ sudo chmod 2775 /var/www
 find /var/www -type d -exec sudo chmod 2755 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
 
+## Secure copy
 scp -i <privateKey> <sourceFile> <userName>@<machineHost>:<destinationPath>
 
 ### Maria DB Install
