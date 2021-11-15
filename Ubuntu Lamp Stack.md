@@ -19,9 +19,6 @@ sudo chmod 2775 /var/www
 find /var/www -type d -exec sudo chmod 2755 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
 
-## Secure copy
-scp -i \<privateKey> \<sourceFile> \<userName>@\<machineHost>:\<destinationPath>
-
 ## Install Apache Server
 sudo apt update && sudo apt upgrade -y
 sudo apt install apache2 -y
@@ -61,7 +58,7 @@ exit;
 
 ## Install PHP
 sudo apt install php -y
-sudo apt install -y php-{common,mysql,xml,xmlrpc,curl,gd,imagick,cli,dev,imap,mbstring,opcache,soap,zip,intl,apcu}
+sudo apt install -y php-{common,mysql,xml,xmlrpc,curl,gd,imagick,cli,dev,imap,mbstring,opcache,soap,zip,intl,apcu,json}
 sudo systemctl restart apache2
 sudo vim /var/www/html/info.php
 ```php
@@ -82,8 +79,18 @@ if ($conn->connect_error) {
 echo "Database connection was successful";
 ```
 
-cd /var/www/osTicket
-sudo chown -R www-data:www-data /var/www/osTicket
+## Install OSTicket
+```bash
+sudo apt install -y php-common php-gd php-imap php-intl php-apcu php-cli php-mbstring php-curl php-mysql php-json php-xml
+sudo systemctl restart apache2
+sudo apt install unzip -y
+sudo mkdir -p /var/www/osTicket
+sudo chown -R $USER:$USER /var/www/osTicket/
+cd /var/www/osTicket/
+wget https://github.com/osTicket/osTicket/releases/download/v1.15.2/osTicket-v1.15.2.zip
+unzip osticket.zip
+rm ofticket.zip
+sudo cp upload/include/ost-sampleconfig.php upload/include/ost-config.php
+sudo chwon -R www-data:www-data /var/www/osTicket
 sudo chmod -R 755 /var/www/osTicket
-sudo cp include/ost-sampleconfig.php include/ost-config.php
-sudo chmod 0666 include/ost-config.php
+```
