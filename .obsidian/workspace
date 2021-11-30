@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "THM/Empire Room.md",
+            "file": "COSN 299/Ubuntu Lamp Stack.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "THM/Empire Room.md",
+                "file": "COSN 299/Ubuntu Lamp Stack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,9 +88,9 @@
   },
   "active": "6f1f32f30ee43125",
   "lastOpenFiles": [
+    "COSN 299/Ubuntu Lamp Stack.md",
     "THM/Empire Room.md",
     "THM/CTFVol1 Room.md",
-    "COSN 299/Ubuntu Lamp Stack.md",
     "Cyber Security Club/SSH Tunnel.md",
     "Misc/Markdown Cheat Sheet.md",
     "Misc/CTF Cheatsheet.md",

